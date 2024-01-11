@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Shift Bookee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Shift Bookee – your next-gen solution for Shifts Booking. This project is built with React, TypeScript, Tailwind CSS, and Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have the following installed on your machine:
 
-## Expanding the ESLint configuration
+- Node.js (version 20.10.0 recommended)
+- npm (Node Package Manager)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To set up the project, clone the repository and navigate to the project directory:
 ```
+git clone https://github.com/your-username/project-name.git
+cd project-name
+```
+## Setup
+```
+npm install
+npm run dev
+```
+## API Endpoint
+Visit ```src/api/axios.ts``` to connect to server endpoint in development mode
+## Note
+The server has not been attached and need to be setup from [Bookeeapp](https://github.com/bookeeapp/react-assignment) (use Node v12.0.0 for server)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
